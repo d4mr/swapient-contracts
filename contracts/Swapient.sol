@@ -82,7 +82,7 @@ contract Swapient {
         require(msg.value > 0, "ERR__NO_VALUE_SUPPLIED");
         Deposit memory newDeposit = Deposit(
             msg.sender,
-            DepositType.ERC20,
+            DepositType.NATIVE,
             msg.value,
             IERC20(address(0)),
             0
