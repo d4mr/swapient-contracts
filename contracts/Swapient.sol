@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 /**
  * @title Swapient Subatomic Swaps on native and ERC20 tokens.
  *
- * This contract provides a way:
+ * This contract provides a way to:
  *  - Deposit tokens (create a sell order, or an unadressed deposit)
  *  - Add a receiver to a portion of your deposit (add a buyer, creating an addressed deposit)
  *  - Claim an addressed deposit
@@ -39,7 +39,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
  *  7) refundDeposit(depositId) - used to refund deposit back to the depositor address. This has no timeout.
  *
  *  8) cancelAddressedDeposit(addresssedDepositId) - used to cancel addressed deposit, and send value back to the original unaddressed deposit.
- *      This works only after a timout.
+ *      This works only after a timeout.
  */
 contract Swapient {
     using SafeERC20 for IERC20;
